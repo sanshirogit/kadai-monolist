@@ -40,7 +40,7 @@ class User extends Model implements AuthenticatableContract,
     
     public function items()
     {
-     return $this->belongsToMany(Item::class)->withPivot('type');
+     return $this->belongsToMany(Item::class)->withPivot('type')->withTimestamps();
     }
     public function want_items()
     {
