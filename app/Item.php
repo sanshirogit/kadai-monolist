@@ -10,7 +10,7 @@ class Item extends Model
     
     public function users()
     {
-        return $this->belongsToMany(User::class)->withPivot('type')->withTimestamps();
+        return $this->belongsToMany(User::class)->withPivot('type');
     }
     
     public function want_users()
