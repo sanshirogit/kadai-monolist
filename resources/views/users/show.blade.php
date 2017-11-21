@@ -19,7 +19,7 @@
                 <li>
                     <div class="status-label">HAVE</div>
                     <div id="have_count" class="status-balue">
-                        xxx
+                        {{ $count_have }}
                     </div>
                 </li>
             </ul>
